@@ -13,9 +13,9 @@ const minorenne = document.getElementById('minore')
 const valuta = 'Euro';
 const form = document.querySelector('nonform')
 
-form.addEventListener ('submit', (event) =>{
+form.addEventListener ('submit', (event) => {
   event.preventDefault();
-})
+});
 
 
 
