@@ -4,7 +4,7 @@ const chilometri = document.getElementById('inschilometri');
 const eta = document.getElementById('inputGroupSelect01');
 const btngenera = document.getElementById('genera')
 const btnannulla = document.getElementById('annulla')
-const bigliettostamp = document.querySelector('biglietto')
+const bigliettostamp = document.getElementById('biglietto')
 const prezzomin = 0.21 ;
 
 const maggioreta = document.getElementById('maggiorenne');
@@ -15,9 +15,7 @@ const valuta = 'Euro';
 
 form.addEventListener('submit', (event) => {
   event.preventDefault();
-  const insnome = nome.value;
-  const inschilometri = chilometri.value;
-  const inseta = eta.value;
+  
 });
 
 
@@ -25,7 +23,9 @@ form.addEventListener('submit', (event) => {
 btngenera.addEventListener ('click', () =>{
   bigliettostamp.classList.remove('d-hide');
   
-
+  const insnome = nome.value;
+  const inschilometri = chilometri.value;
+  const inseta = eta.value;
 
 
  let totale = (inschilometri * prezzomin);
