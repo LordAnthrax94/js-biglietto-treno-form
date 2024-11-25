@@ -22,44 +22,10 @@ form.addEventListener('submit', (event) => {
 
 
 
-
-
-
-
-// const insnome = nome.value;
-// const inschilometri = chilometri.value;
-// const inseta = eta.value;
-
-
-//  let totale = (inschilometri * prezzomin);
- 
-
-//  let scontoMin = (totale * 20) / 100
-//  let scontoOver = (totale * 40) / 100
-
-//  let prezzoscontMin = (totale - scontoMin); 
-//  let prezzoscontOver = (totale - scontoOver); 
-
-//   if(eta === minorenne){
-  
-//  console.log(prezzoscontMin.toFixed(2) + ' ' + valuta);
-
-//   } else if(eta === over){
-
-//     console.log(prezzoscontOver.toFixed(2) + ' ' + valuta);
-
-//   } else{
-//     console.log(totale.toFixed(2) + ' ' + valuta);
-//   }
-
-
-
 btngenera.addEventListener ('click', () =>{
   bigliettostamp.classList.remove('d-hide');
   
-// const insnome = nome.value;
-// const inschilometri = chilometri.value;
-// const inseta = eta.value;
+
 
 
  let totale = (inschilometri * prezzomin);
@@ -84,15 +50,6 @@ btngenera.addEventListener ('click', () =>{
   }
   //console.log(totale + ' ' + valuta);
 })
-
-
-
-
-
-
-
-
-
 
 
 
