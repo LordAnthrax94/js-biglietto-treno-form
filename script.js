@@ -1,3 +1,4 @@
+const form = document.getElementById('nonform')
 const nome = document.getElementById('name')
 const chilometri = document.getElementById('inschilometri');
 const eta = document.getElementById('inputGroupSelect01');
@@ -11,11 +12,14 @@ const over = document.getElementById('over');
 const minorenne = document.getElementById('minore')
 
 const valuta = 'Euro';
-const form = document.querySelector('nonform')
 
-form.addEventListener ('submit', (event) => {
+form.addEventListener('submit', (event) => {
   event.preventDefault();
 });
+
+
+
+
 
 
 
@@ -24,33 +28,49 @@ const inschilometri = chilometri.value;
 const inseta = eta.value;
 
 
-let totale = (inschilometri * prezzomin);
-// console.log(totale + ' ' + valuta);
+// let totale = (inschilometri * prezzomin);
+// // console.log(totale + ' ' + valuta);
 
-let scontoMin = (totale * 20) / 100
-let scontoOver = (totale * 40) / 100
+// let scontoMin = (totale * 20) / 100
+// let scontoOver = (totale * 40) / 100
 
-let prezzoscontMin = (totale - scontoMin); 
-let prezzoscontOver = (totale - scontoOver); 
+// let prezzoscontMin = (totale - scontoMin); 
+// let prezzoscontOver = (totale - scontoOver); 
 
- if(eta == minorenne){
+//  if(eta == minorenne){
   
- console.log(prezzoscontMin.toFixed(2) + ' ' + valuta);
+//  console.log(prezzoscontMin.toFixed(2) + ' ' + valuta);
 
- } else if(eta == over){
+//  } else if(eta == over){
 
-   console.log(prezzoscontOver.toFixed(2) + ' ' + valuta);
+//    console.log(prezzoscontOver.toFixed(2) + ' ' + valuta);
 
- } else{
-   console.log(totale.toFixed(2) + ' ' + valuta);
- }
+//  } else{
+//    console.log(totale.toFixed(2) + ' ' + valuta);
+//  }
 
 
 
 btngenera.addEventListener ('click', () =>{
   biglietto.classList.remove('d-hide');
-  
+  let totale = (inschilometri * prezzomin);
+  let scontoMin = (totale * 20) / 100
+  let scontoOver = (totale * 40) / 100
+
+  let prezzoscontMin = (totale - scontoMin); 
+  let prezzoscontOver = (totale - scontoOver); 
+
+  if(eta == minorenne){
     
+  console.log(prezzoscontMin.toFixed(2) + ' ' + valuta);
+
+  } else if(eta == over){
+
+    console.log(prezzoscontOver.toFixed(2) + ' ' + valuta);
+
+  } else{
+    console.log(totale.toFixed(2) + ' ' + valuta);
+  }
 })
 
 
