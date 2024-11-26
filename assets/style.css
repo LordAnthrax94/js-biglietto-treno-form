@@ -4,7 +4,23 @@
 
 
 
-#biglietto{
-  background-color: red;
+#biglietto{  
   margin-top: 50px;   
 }
+
+
+.col-4{
+border: 1px solid black;
+}
+
+.col-4 h2{
+  border-bottom: 1px solid black;
+  padding-bottom: 5px;
+}
+
+.col-8{
+  border: 1px solid black;
+  align-items: center;
+  justify-content: space-between;
+}
+
