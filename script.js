@@ -38,21 +38,22 @@ btngenera.addEventListener ('click', () =>{
  let prezzoscontOver = (totale - scontoOver); 
 
   if(inseta == 1){
-  
- console.log(prezzoscontMin.toFixed(2) + ' ' + valuta);
+    document.getElementById('prezzo-finale').innerHTML = prezzoscontMin.toFixed(2);
+    console.log(prezzoscontMin.toFixed(2) + ' ' + valuta);
 
   } else if(inseta == 3){
-
+    document.getElementById('prezzo-finale').innerHTML = prezzoscontOver.toFixed(2);
     console.log(prezzoscontOver.toFixed(2) + ' ' + valuta);
 
   } else{
     console.log(totale.toFixed(2) + ' ' + valuta);
+    document.getElementById('prezzo-finale').innerHTML = totale.toFixed(2);
   }
   //console.log(totale + ' ' + valuta);
   document.getElementById('Nome-passeggero').innerHTML = insnome;
   document.getElementById('scontistica').innerHTML = inseta;
   document.getElementById('chilometri-percorsi').innerHTML = inschilometri;
-  document.getElementById('prezzo-finale').innerHTML = totale.toFixed(2);
+  
 })
 
 
@@ -64,5 +65,7 @@ btnannulla.addEventListener ('click', () =>{
 
 
 function resetvalue(){
-  
+  nome.value = '';
+  inschilometri.value = '';
+  inseta.value= '';
 }
