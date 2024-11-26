@@ -49,6 +49,10 @@ btngenera.addEventListener ('click', () =>{
     console.log(totale.toFixed(2) + ' ' + valuta);
   }
   //console.log(totale + ' ' + valuta);
+  document.getElementById('Nome-passeggero').innerHTML = insnome;
+  document.getElementById('scontistica').innerHTML = inseta;
+  document.getElementById('chilometri-percorsi').innerHTML = inschilometri;
+  document.getElementById('prezzo-finale').innerHTML = totale.toFixed(2);
 })
 
 
@@ -57,3 +61,8 @@ btngenera.addEventListener ('click', () =>{
 btnannulla.addEventListener ('click', () =>{
   biglietto.classList.add('d-hide');  
 })
+
+
+function resetvalue(){
+  
+}
